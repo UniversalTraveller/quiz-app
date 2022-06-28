@@ -1,0 +1,9 @@
+.nav-bar {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-bar__item {
+}
