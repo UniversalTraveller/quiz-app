@@ -11,7 +11,42 @@
     <header class="title-bar">
       <h1 class="title-bar__page-title">Create</h1>
     </header>
-    <main class="content-area"></main>
+    <main class="content-area">
+      <form action="" class="new-question-form">
+        <label for="question" class="new-question-form__question-label"
+          >New question
+          <textarea
+            name="question"
+            id="question"
+            class="new-question-form__question-field"
+            cols="45"
+            rows="15"
+          ></textarea>
+        </label>
+        <label for="answer" class="new-question-form_answer-label"
+          >Answer
+          <textarea
+            name="answer"
+            id="answer"
+            class="new-question-form__answer-field"
+            cols="45"
+            rows="15"
+          ></textarea>
+        </label>
+        <label for="tags" class="new-question-form__tags-label"
+          >Tags
+          <input
+            type="text"
+            name="tags"
+            id="tags"
+            class="new-question-form__tags-field"
+          />
+        </label>
+        <button type="submit" class="new-question-form__submit-button">
+          Submit
+        </button>
+      </form>
+    </main>
     <nav class="nav-bar">
       <a href="index.html" class="nav-bar__item">Home</a>
       <a href="bookmarks.html" class="nav-bar__item">Bookmarks</a>
