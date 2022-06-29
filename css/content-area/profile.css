@@ -1,12 +1,17 @@
 .profile {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .profile__picture {
+  border-radius: 50%;
   width: 32rem;
-  height: 32rem;
+  weight: 32rem;
+  padding: 1rem;
 }
 
 .profile__user-name {
+  padding: 10rem 0rem 0rem 5rem;
 }
 
 .profile__about-text {
