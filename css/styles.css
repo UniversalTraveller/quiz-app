@@ -1,7 +1,7 @@
-@import url(basics.css);
-@import url(title-bar.css);
-@import url(content-area.css);
-@import url(question-card.css);
-@import url(taglist.css);
-@import url(nav-bar.css);
-@import url(new-question-form.css);
+@import url(./basics.css);
+@import url(./title-bar.css);
+@import url(./content-area.css);
+@import url(./question-card.css);
+@import url(./taglist.css);
+@import url(./nav-bar.css);
+@import url(./new-question-form.css);
