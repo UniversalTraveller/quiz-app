@@ -1,6 +1,7 @@
 @import url(./new-question-form.css);
 @import url(./question-card.css);
 @import url(./taglist.css);
+@import url(./profile.css);
 
 .content-area {
   padding: 1rem 1rem 1rem 1rem;
