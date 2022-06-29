@@ -1,18 +1,20 @@
 .profile {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .profile__picture {
   border-radius: 50%;
-  width: 32rem;
-  weight: 32rem;
   padding: 1rem;
+  width: 100%;
 }
 
 .profile__user-name {
-  padding: 10rem 0rem 0rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile__about-text {
+  column-span: 2;
 }
