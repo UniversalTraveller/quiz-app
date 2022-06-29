@@ -1,4 +1,13 @@
 .taglist {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  list-style: none;
 }
-.taglist_tag {
+
+.taglist__tag {
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: aquamarine;
 }
