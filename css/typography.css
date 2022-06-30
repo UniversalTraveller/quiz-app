@@ -1,0 +1,10 @@
+.new-question-form__label,
+.taglist__tag,
+.profile__about-text,
+.question-card__question,
+.question-card__show-answer-button,
+.nav-bar__link,
+.logout-button {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}

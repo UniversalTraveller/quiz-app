@@ -1,4 +1,6 @@
 @import url(./basics.css);
+@import url(./typography.css);
+@import url(./colors.css);
 @import url(./title-bar/title-bar.css);
 @import url(./content-area/content-area.css);
 @import url(./nav-bar/nav-bar.css);

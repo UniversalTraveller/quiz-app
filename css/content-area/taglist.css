@@ -1,13 +1,18 @@
 .taglist {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
-  padding: 1rem;
+  padding: 1.5rem 0;
   list-style: none;
 }
 
+.taglist--flex-span-two {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
 .taglist__tag {
-  font-size: 1.6rem;
-  border-radius: 1rem;
+  border-radius: 0.6rem;
   padding: 0.5rem;
   background-color: aquamarine;
 }
