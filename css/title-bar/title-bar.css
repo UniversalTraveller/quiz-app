@@ -3,8 +3,6 @@
   background: var(--highlight-color);
 }
 
-.title-bar__app-title {
-}
-
 .title-bar__page-title {
+  text-align: center;
 }

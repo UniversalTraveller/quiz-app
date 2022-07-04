@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="title-bar">
-      <h1 class="title-bar__app-title">Quiz-App</h1>
+      <h1 class="title-bar__page-title">Quiz-App</h1>
     </header>
     <main class="content-area">
       <article class="question-card">
@@ -20,7 +20,11 @@
           dignissimos provident obcaecati aut? Cupiditate odit tempora
           recusandae qui vel eius eaque maxime?
         </p>
-        <button class="question-card__show-answer-button" type="button">
+        <button
+          class="question-card__show-answer-button"
+          type="button"
+          js-data="show-answers-button"
+        >
           Show Answers
         </button>
         <ul class="taglist">
@@ -37,5 +41,6 @@
       <a href="create.html" class="nav-bar__link">Create</a>
       <a href="profile.html" class="nav-bar__link">Profile</a>
     </nav>
+    <script src="./src/index.js" defer></script>
   </body>
 </html>
