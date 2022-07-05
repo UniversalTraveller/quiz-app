@@ -1,5 +1,10 @@
 :root {
-  --highlight-color: rgb(78, 181, 188);
-  --primary-background-color: rgb(164, 234, 237);
-  --secondary-background-color: rgb(206, 241, 242);
+  --secondary-dark-color: rgb(78, 181, 188);
+  --secondary-light-color: rgb(164, 234, 237);
+  --primary-light-color: rgb(206, 241, 242);
+
+  --primary-dark-color: #111;
+  --secondary-dark-color: rgb(78, 181, 188);
+  --primary-light-color: rgb(206, 241, 242);
+  --secondary-light-color: rgb(164, 234, 237);
 }

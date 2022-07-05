@@ -5,7 +5,7 @@
   bottom: 0;
   display: flex;
   justify-content: space-around;
-  background: var(--highlight-color);
+  background: var(--secondary-dark-color);
 }
 .nav-bar__link {
   color: black;

@@ -1,5 +1,5 @@
 .question-card {
-  background: var(--secondary-background-color);
+  background: var(--primary-light-color);
   border-radius: 1rem;
   position: relative;
   padding: 4rem 2rem 2rem 2rem;
@@ -12,10 +12,12 @@
   position: absolute;
   border-width: 0px;
   border-radius: 0.4rem;
-  background: var(--highlight-color);
-  color: var(--secondary-background-color);
+  background: var(--secondary-dark-color);
+  color: var(--primary-light-color);
+  width: 3rem;
+  height: 4rem;
   top: -1rem;
-  right: 3rem;
+  right: 4rem;
 }
 
 .question-card__question {
@@ -26,8 +28,8 @@
   padding: 0.6rem;
   border-radius: 0.8rem;
   border-width: 1px;
-  border-color: var(--highlight-color);
-  background: var(--secondary-background-color);
+  border-color: var(--secondary-dark-color);
+  background: var(--primary-light-color);
 }
 
 .question-card__answer {
