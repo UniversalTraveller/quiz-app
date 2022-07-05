@@ -9,7 +9,7 @@
   color: var(--primary-light-color);
 }
 .nav-bar__link {
-  color: black;
+  color: var(--primary-light-color);
 }
 
 .nav-bar__link--home {
