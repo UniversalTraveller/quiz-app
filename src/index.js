@@ -4,7 +4,8 @@ let answersButton = document.querySelector('[js-data="show-answers-button"]');
 
 function onButtonClick() {
   console.log("test");
-  text.classList.toggle("text--highlight");
+  let answer = document.querySelector('[js-data="answer"]');
+  answer.classList.toggle("question-card__answer--hidden");
 }
 
 answersButton.addEventListener("click", onButtonClick);

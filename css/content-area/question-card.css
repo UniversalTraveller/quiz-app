@@ -29,3 +29,10 @@
   border-color: var(--highlight-color);
   background: var(--secondary-background-color);
 }
+
+.question-card__answer {
+}
+
+.question-card__answer--hidden {
+  display: none;
+}
