@@ -31,6 +31,7 @@
 }
 
 .question-card__answer {
+  padding: 1.5rem 0 0 0;
 }
 
 .question-card__answer--hidden {

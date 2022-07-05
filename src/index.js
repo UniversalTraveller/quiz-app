@@ -1,6 +1,6 @@
 console.clear();
 console.log("hallo welt!");
-let answersButton = document.querySelector('[js-data="show-answers-button"]');
+let answersButton = document.querySelector('[js-data="show-answer-button"]');
 
 function onButtonClick() {
   console.log("test");
