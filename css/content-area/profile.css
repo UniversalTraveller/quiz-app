@@ -13,9 +13,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: var(--sans-serif-font);
+  font-size: var(--primary-section-headline-font-sihze);
+  color: var(--primary-dark-color);
 }
 
 .profile__about-text {
+  padding: 3rem 0 1rem 0;
   grid-column-start: 1;
   grid-column-end: 3;
 }

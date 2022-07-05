@@ -10,4 +10,10 @@ html {
 
 body {
   background: var(--secondary-light-color);
+  font-family: var(--serif-font);
+  font-size: 1.6rem;
+}
+
+::placeholder {
+  font-family: var(--serif-font);
 }

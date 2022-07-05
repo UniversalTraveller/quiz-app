@@ -6,4 +6,6 @@
 .title-bar__page-title {
   text-align: center;
   color: var(--primary-light-color);
+  font-family: var(--sans-serif-font);
+  font-size: var(--page-title-font-size);
 }

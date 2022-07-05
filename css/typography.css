@@ -1,11 +1,9 @@
-.new-question-form__label,
-.taglist__tag,
-.profile__about-text,
-.question-card__question,
-.question-card__answer,
-.question-card__show-answer-button,
-.nav-bar__link,
-.logout-button {
-  font-size: 1.6rem;
-  font-family: Arial, Helvetica, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400;0,700;1,400;1,700&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --serif-font: "Gentium Book Plus", serif;
+  --sans-serif-font: "Finlandica", sans-serif;
+
+  --page-title-font-size: 3.5rem;
+  --primary-section-headline-font-sihze: 2.5rem;
 }

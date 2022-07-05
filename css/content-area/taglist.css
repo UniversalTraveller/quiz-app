@@ -16,4 +16,5 @@
   padding: 0.3rem 0.6rem;
   color: var(--primary-light-color);
   background-color: var(--secondary-dark-color);
+  font-family: var(--sans-serif-font);
 }
