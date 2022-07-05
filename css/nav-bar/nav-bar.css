@@ -6,9 +6,9 @@
   display: flex;
   justify-content: space-around;
   background: var(--highlight-color);
-  color: black;
 }
 .nav-bar__link {
+  color: black;
 }
 
 .nav-bar__link--home {
