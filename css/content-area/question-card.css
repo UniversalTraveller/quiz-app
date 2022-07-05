@@ -10,6 +10,10 @@
 
 .question-card__bookmark-button {
   position: absolute;
+  border-width: 0px;
+  border-radius: 0.4rem;
+  background: var(--highlight-color);
+  color: var(--secondary-background-color);
   top: -1rem;
   right: 3rem;
 }
