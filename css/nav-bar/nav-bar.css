@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-around;
   background: var(--secondary-dark-color);
+  font-color: var(--primary-light-color);
 }
 .nav-bar__link {
   color: black;

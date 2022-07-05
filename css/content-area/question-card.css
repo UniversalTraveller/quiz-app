@@ -24,14 +24,6 @@
   padding: 0 0 1.5rem 0;
 }
 
-.question-card__show-answer-button {
-  padding: 0.6rem;
-  border-radius: 0.8rem;
-  border-width: 1px;
-  border-color: var(--secondary-dark-color);
-  background: var(--primary-light-color);
-}
-
 .question-card__answer {
   padding: 1.5rem 0 0 0;
 }

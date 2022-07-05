@@ -5,4 +5,5 @@
 
 .title-bar__page-title {
   text-align: center;
+  color: var(--primary-light-color);
 }

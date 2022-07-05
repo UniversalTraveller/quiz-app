@@ -1,0 +1,15 @@
+.big-button {
+  padding: 0.6rem;
+  border-radius: 0.8rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--secondary-dark-color);
+  color: var(--secondary-dark-color);
+  background-color: transparent;
+  align-self: center;
+}
+
+.big-button:hover {
+  background-color: var(--secondary-dark-color);
+  color: var(--primary-light-color);
+}
