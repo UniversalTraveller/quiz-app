@@ -6,6 +6,11 @@
   display: flex;
   justify-content: space-around;
   background: var(--highlight-color);
+  color: black;
 }
 .nav-bar__link {
+}
+
+.nav-bar__link--home {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
