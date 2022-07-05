@@ -1,7 +1,6 @@
 .new-question-form {
   display: flex;
   flex-direction: column;
-  row-gap: 1rem;
 }
 
 .new-question-form__label {
@@ -11,4 +10,5 @@
 .new-question-form__input-field {
   display: flex;
   flex-direction: column;
+  margin: 0 0 1.2rem 0;
 }
