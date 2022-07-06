@@ -1,5 +1,5 @@
 @import url(./new-question-form.css);
-@import url(./question-card.css);
+@import url(../../question-card/question-card.css);
 @import url(./taglist.css);
 @import url(./profile.css);
 @import url(./big-button.css);

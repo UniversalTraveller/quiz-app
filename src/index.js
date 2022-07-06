@@ -1,17 +1,7 @@
-const answerButton = document.querySelector('[data-js="show-answer-button"]');
-answerButton.addEventListener("click", onButtonClick);
-function onButtonClick() {
-  const answer = document.querySelector('[data-js="answer"]');
-  answer.classList.toggle("question-card__answer--hidden");
-  if (answerButton.innerText === "Show Answer") {
-    answerButton.innerText = "Hide Answer";
-  } else {
-    answerButton.innerText = "Show Answer";
-  }
-}
+import showAnswer from "./showAnswer.js";
+import setBookmark from "../question-card/setBookmark.js";
 
-const bookmarkButton = document.querySelector('[data-js="bookmark"]');
-bookmarkButton.addEventListener("click", onBookmarkClick);
-function onBookmarkClick() {
-  bookmarkButton.classList.toggle("question-card__bookmark-button--active");
-}
+showAnswer();
+setBookmark();
+
+// auf inline/arrow funktion umbauen, boolean für isBookmarked und eventuell ternary operator, dateien anhand von komponenten ordnen
