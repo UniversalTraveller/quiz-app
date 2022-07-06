@@ -4,7 +4,7 @@ function onButtonClick() {
   let answer = document.querySelector('[js-data="answer"]');
   answer.classList.toggle("question-card__answer--hidden");
   if (answersButton.innerHTML.includes("Show Answer")) {
-    answersButton.innerHTML = "Hide Anser";
+    answersButton.innerHTML = "Hide Answer";
   } else {
     answersButton.innerHTML = "Show Answer";
   }
