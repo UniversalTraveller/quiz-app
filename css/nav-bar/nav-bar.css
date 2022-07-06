@@ -10,8 +10,5 @@
 }
 .nav-bar__link {
   color: var(--primary-light-color);
-}
-
-.nav-bar__link--home {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  font-variation-settings: "FILL" 1;
 }
