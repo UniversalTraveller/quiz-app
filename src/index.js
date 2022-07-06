@@ -1,12 +1,12 @@
-const answersButton = document.querySelector('[js-data="show-answer-button"]');
-answersButton.addEventListener("click", onButtonClick);
+const answerButton = document.querySelector('[js-data="show-answer-button"]');
+answerButton.addEventListener("click", onButtonClick);
 function onButtonClick() {
   const answer = document.querySelector('[js-data="answer"]');
   answer.classList.toggle("question-card__answer--hidden");
-  if (answersButton.innerHTML.includes("Show Answer")) {
-    answersButton.innerHTML = "Hide Answer";
+  if (answerButton.innerHTML.includes("Show Answer")) {
+    answerButton.innerHTML = "Hide Answer";
   } else {
-    answersButton.innerHTML = "Show Answer";
+    answerButton.innerHTML = "Show Answer";
   }
 }
 
