@@ -1,13 +1,16 @@
 export default function showAnswer() {
   const answerButton = document.querySelector('[data-js="show-answer-button"]');
-  answerButton.addEventListener("click", onButtonClick);
-  function onButtonClick() {
+  let answerVisible = false;
+  answerButton.addEventListener("click", () => {
     const answer = document.querySelector('[data-js="answer"]');
-    answer.classList.toggle("question-card__answer--hidden");
-    if (answerButton.innerText === "Show Answer") {
+    if (answerVisible) {
+      answerVisible = false;
+      answer.classList.add("question-card__answer--hidden");
       answerButton.innerText = "Hide Answer";
     } else {
+      answerVisible = true;
+      answer.classList.remove("question-card__answer--hidden");
       answerButton.innerText = "Show Answer";
     }
-  }
+  });
 }
