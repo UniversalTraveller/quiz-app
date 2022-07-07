@@ -17,7 +17,11 @@
     </header>
     <main class="content-area">
       <article class="question-card">
-        <button class="question-card__bookmark-button">
+        <button
+          class="question-card__bookmark-button"
+          type="button"
+          data-js="bookmark"
+        >
           <span class="material-symbols-outlined">Bookmark</span>
         </button>
         <p class="question-card__question">
@@ -26,12 +30,49 @@
           dignissimos provident obcaecati aut? Cupiditate odit tempora
           recusandae qui vel eius eaque maxime?
         </p>
-        <button class="big-button">Show Answer</button>
+        <button class="big-button" type="button" data-js="show-answer-button">
+          Show Answer
+        </button>
+        <p
+          class="question-card__answer question-card__answer--hidden"
+          data-js="answer"
+        >
+          This is the answer! Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Obcaecati amet blanditiis cupiditate! Sapiente dolorum autem
+          cumque, similique dignissimos provident obcaecati aut? Cupiditate odit
+          tempora recusandae qui vel eius eaque maxime?
+        </p>
         <ul class="taglist">
           <li class="taglist__tag">Poecilia reticulata</li>
           <li class="taglist__tag">Xiphophorus helleri</li>
           <li class="taglist__tag">Heterandria formosa</li>
           <li class="taglist__tag">Gambusia affinis</li>
+        </ul>
+      </article>
+      <article class="question-card">
+        <button
+          class="question-card__bookmark-button"
+          type="button"
+          data-js="bookmark"
+        >
+          <span class="material-symbols-outlined">Bookmark</span>
+        </button>
+        <p class="question-card__question">
+          Wer kennt die Antwort auf diese Frage?
+        </p>
+        <button class="big-button" type="button" data-js="show-answer-button">
+          Show Answer
+        </button>
+        <p
+          class="question-card__answer question-card__answer--hidden"
+          data-js="answer"
+        >
+          Niemand. Oder alle. Je nachdem, wie du es betrachtest.
+        </p>
+        <ul class="taglist">
+          <li class="taglist__tag">Unsinn</li>
+          <li class="taglist__tag">Fangfrage</li>
+          <li class="taglist__tag">Fülltext</li>
         </ul>
       </article>
     </main>
@@ -49,5 +90,6 @@
         ><span class="material-symbols-outlined">Person</span></a
       >
     </nav>
+    <script src="./src/index.js" defer type="module"></script>
   </body>
 </html>
