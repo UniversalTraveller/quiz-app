@@ -8,7 +8,9 @@
   background: var(--secondary-dark-color);
   color: var(--primary-light-color);
 }
-.nav-bar__link {
+.nav-bar__button {
   color: var(--primary-light-color);
+  background: none;
+  border: none;
   font-variation-settings: "FILL" 1;
 }
