@@ -1,0 +1,11 @@
+@import url(../../molecules/new-question-form/new-question-form.css);
+@import url(../../molecules/question-card/question-card.css);
+@import url(../../molecules/taglist/taglist.css);
+@import url(../../organisms/profile/profile.css);
+@import url(../../atoms/big-button/big-button.css);
+
+.content-area {
+  padding: 5rem 2rem 2rem 2rem;
+  max-width: 60rem;
+  margin-bottom: 5rem;
+}

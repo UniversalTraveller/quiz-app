@@ -12,7 +12,3 @@
   color: var(--primary-light-color);
   font-variation-settings: "FILL" 1;
 }
-
-.nav__list-item:not(:first-child) {
-  border-left: 1px solid var(--white);
-}
