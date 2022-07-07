@@ -1,7 +1,13 @@
 export default function setBookmark() {
   const bookmarkButton = document.querySelector('[data-js="bookmark"]');
-  bookmarkButton.addEventListener("click", onBookmarkClick);
-  function onBookmarkClick() {
-    bookmarkButton.classList.toggle("question-card__bookmark-button--active");
-  }
+  let isBookmarked = false;
+  bookmarkButton.addEventListener("click", () => {
+    if (isBookmarked) {
+      bookmarkButton.classList.remove("question-card__bookmark-button--active");
+      isBookmarked = false;
+    } else {
+      bookmarkButton.classList.add("question-card__bookmark-button--active");
+      isBookmarked = true;
+    }
+  });
 }
