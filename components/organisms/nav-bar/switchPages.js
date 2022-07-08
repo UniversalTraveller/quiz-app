@@ -1,7 +1,39 @@
 export default function switchPages() {
   const pages = document.querySelectorAll('[data-js="page"]');
 
-  const homeButton = document.querySelector('[data-js="home_button"]');
+  /*pages.forEach((page) => {
+    const pageIndex = Array.from(pages).indexOf(page);
+    
+  });*/
+
+  const navigationButtons = document.querySelectorAll(
+    '[data-js="nav-bar__button"]'
+  );
+
+  navigationButtons.forEach((navigationButton) => {
+    const buttonIndex = Array.from(navigationButtons).indexOf(navigationButton);
+
+    navigationButton.addEventListener("click", switchToPage);
+
+    function switchToPage() {
+      pages.forEach((page) => {
+        page.classList.add("make-invisible");
+      });
+      pages[buttonIndex].classList.remove("make-invisible");
+    }
+  });
+
+  /*const homeButton = document.querySelector('[data-js="home_button"]');
+  homeButton.addEventListener("click", switchToHome);
+
+  function switchToHome() {
+    pages.forEach((page) => {
+      page.classList.add("make-invisible");
+    });
+    pages[0].classList.remove("make-invisible");
+  }
+
+  /*const homeButton = document.querySelector('[data-js="home_button"]');
   homeButton.addEventListener("click", switchToHome);
 
   function switchToHome() {
@@ -40,4 +72,5 @@ export default function switchPages() {
     });
     pages[3].classList.remove("make-invisible");
   }
+  */
 }
