@@ -1,17 +1,15 @@
 import getCards from "../../molecules/question-card/cards.js";
-export default function createHomePage(page, title, cards) {
-  const contentAreas = document.getElementsByClassName(page);
-  const contentArea = contentAreas[0];
-  contentArea.innerHTML = "";
+import createTitleBar from "../../organisms/title-bar/createTitleBar.js";
+export default function createPage(page, title, cards) {
+  const pages = document.getElementsByClassName(page);
+  const pageContent = pages[0];
+  pageContent.innerHTML = "";
 
-  const pageHeader = document.createElement("header");
-  pageHeader.classList.add("title-bar");
-  pageHeader.innerHTML = `<h1 class="title-bar__page-title">${title}</h1>`;
-  contentArea.append(pageHeader);
+  pageContent.append(createTitleBar(title));
 
   const pageMain = document.createElement("main");
   pageMain.classList.add("content-area");
-  contentArea.append(pageMain);
+  pageContent.append(pageMain);
 
   cards.forEach((card) => {
     const questionCard = document.createElement("article");
@@ -40,8 +38,8 @@ export default function createHomePage(page, title, cards) {
         bookmarkButton.classList.add("question-card__bookmark-button--active");
         card["bookmarked"] = true;
       }
-      createHomePage("page--bookmarks", "Bookmarks", cards);
-      createHomePage("page--home", "Quiz-App", cards);
+      createPage("page--bookmarks", "Bookmarks", cards);
+      createPage("page--home", "Quiz-App", cards);
     });
 
     const bookmarkIcon = document.createElement("span");
