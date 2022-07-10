@@ -47,6 +47,7 @@ export default function getCards() {
     const questionCard = document.createElement("article");
     questionCard.classList.add("question-card");
     contentArea.append(questionCard);
+
     const bookmarkButton = document.createElement("button");
     bookmarkButton.classList.add("question-card__bookmark-button");
 
@@ -66,16 +67,14 @@ export default function getCards() {
       }
     });
 
-    questionCard.append(bookmarkButton);
     const bookmarkIcon = document.createElement("span");
     bookmarkIcon.classList.add("material-symbols-outlined");
-
     bookmarkIcon.innerText = "Bookmark";
     bookmarkButton.append(bookmarkIcon);
+
     const cardQuestion = document.createElement("p");
     cardQuestion.classList.add("question-card__question");
     cardQuestion.innerText = card["question"];
-    questionCard.append(cardQuestion);
 
     const cardAnswer = document.createElement("p");
     cardAnswer.classList.add(
@@ -103,8 +102,6 @@ export default function getCards() {
       }
     }
 
-    questionCard.append(answerButton);
-
-    questionCard.append(cardAnswer);
+    questionCard.append(bookmarkButton, cardQuestion, answerButton, cardAnswer);
   });
 }
