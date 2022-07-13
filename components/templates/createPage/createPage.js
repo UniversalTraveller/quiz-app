@@ -52,12 +52,11 @@ export default function createPage(page, title, cards) {
     cardQuestion.innerText = card["question"];
 
     const cardTags = document.createElement("ul");
-    card.tags.forEach((tag) = {
-      const cardTag = document.createElement("li");
-
-    });
-
-
+    cardTags.classList.add("taglist");
+    const cardTag = document.createElement("li");
+    cardTag.classList.add("taglist__tag");
+    cardTag.innerText = card.tags;
+    cardTags.append(cardTag);
 
     const cardAnswer = document.createElement("p");
     cardAnswer.classList.add(
@@ -85,6 +84,12 @@ export default function createPage(page, title, cards) {
       }
     }
 
-    questionCard.append(bookmarkButton, cardQuestion, answerButton, cardTags, cardAnswer);
+    questionCard.append(
+      bookmarkButton,
+      cardQuestion,
+      answerButton,
+      cardTags,
+      cardAnswer
+    );
   });
 }
