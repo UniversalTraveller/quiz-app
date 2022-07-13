@@ -51,6 +51,14 @@ export default function createPage(page, title, cards) {
     cardQuestion.classList.add("question-card__question");
     cardQuestion.innerText = card["question"];
 
+    const cardTags = document.createElement("ul");
+    card.tags.forEach((tag) = {
+      const cardTag = document.createElement("li");
+
+    });
+
+
+
     const cardAnswer = document.createElement("p");
     cardAnswer.classList.add(
       "question-card__answer",
@@ -77,6 +85,6 @@ export default function createPage(page, title, cards) {
       }
     }
 
-    questionCard.append(bookmarkButton, cardQuestion, answerButton, cardAnswer);
+    questionCard.append(bookmarkButton, cardQuestion, answerButton, cardTags, cardAnswer);
   });
 }
