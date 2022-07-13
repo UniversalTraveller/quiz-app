@@ -12,7 +12,8 @@ export default function getCards() {
     const cards = [];
 
     arrayToDisplay.forEach((card, index) => {
-      const questionText = card.question.replace(/&quot;/g, '"');
+      let questionText = card.question.replace(/&quot;/g, '"');
+      questionText = questionText.repalace(/&quot;/g, '"');
       cards.push({
         id: index + 1,
         question: questionText,
