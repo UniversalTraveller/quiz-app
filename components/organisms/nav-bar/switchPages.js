@@ -8,12 +8,12 @@ export default function switchPages() {
 
   navigationButtons.forEach((navigationButton, buttonIndex) => {
     //const buttonIndex = Array.from(navigationButtons).indexOf(navigationButton);
-    navigationButton.addEventListener("click", switchToPage);
+    navigationButton.addEventListener('click', switchToPage);
     function switchToPage() {
-      pages.forEach((page) => {
-        page.classList.add("make-invisible");
+      pages.forEach(page => {
+        page.classList.add('make-invisible');
       });
-      pages[buttonIndex].classList.remove("make-invisible");
+      pages[buttonIndex].classList.remove('make-invisible');
     }
   });
 }
