@@ -22,7 +22,7 @@
 }
 
 .question-card__bookmark-button--active {
-  font-variation-settings: "FILL" 1;
+  font-variation-settings: 'FILL' 1;
 }
 
 .question-card__question {

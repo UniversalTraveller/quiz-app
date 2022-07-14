@@ -1,5 +1,5 @@
 export default function switchPages() {
-  const pages = document.querySelectorAll('[data-js="page"]');
+  const pages = document.querySelectorAll('.page');
   const navigationButtons = document.querySelectorAll(
     '[data-js="nav-bar__button"]'
   );
@@ -8,12 +8,12 @@ export default function switchPages() {
 
   navigationButtons.forEach((navigationButton, buttonIndex) => {
     //const buttonIndex = Array.from(navigationButtons).indexOf(navigationButton);
-    navigationButton.addEventListener("click", switchToPage);
+    navigationButton.addEventListener('click', switchToPage);
     function switchToPage() {
-      pages.forEach((page) => {
-        page.classList.add("make-invisible");
+      pages.forEach(page => {
+        page.classList.add('make-invisible');
       });
-      pages[buttonIndex].classList.remove("make-invisible");
+      pages[buttonIndex].classList.remove('make-invisible');
     }
   });
 }
