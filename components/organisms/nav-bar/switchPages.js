@@ -1,5 +1,5 @@
 export default function switchPages() {
-  const pages = document.querySelectorAll('[data-js="page"]');
+  const pages = document.querySelectorAll('.page');
   const navigationButtons = document.querySelectorAll(
     '[data-js="nav-bar__button"]'
   );
