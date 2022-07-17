@@ -1,3 +1,4 @@
+import switchPages from '../../organisms/nav-bar/switchPages.js';
 import displayCards from './displayCards.js';
 export default function getCards() {
   const url = 'https://opentdb.com/api.php?amount=10';
@@ -16,8 +17,7 @@ export default function getCards() {
         tags: card.category,
       };
     });
-    console.log('Cards: ' + cards);
-    displayCards('page--home', 'Quiz-App', cards);
-    displayCards('page--bookmarks', 'Bookmarks', cards);
+
+    switchPages('page--home', 'Quiz-App', cards);
   }
 }

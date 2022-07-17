@@ -1,15 +1,18 @@
-export default function switchPages() {
+import displayCards from '../../molecules/question-card/displayCards.js';
+
+export default function switchPages(page, title, cards) {
   const pages = document.querySelectorAll('.page');
   const navigationButtons = document.querySelectorAll(
     '[data-js="nav-bar__button"]'
   );
 
-  console.log(navigationButtons);
+  displayCards('page--home', 'Quiz-App', cards);
+  displayCards('page--bookmarks', 'Bookmarks', cards);
 
   navigationButtons.forEach((navigationButton, buttonIndex) => {
-    //const buttonIndex = Array.from(navigationButtons).indexOf(navigationButton);
     navigationButton.addEventListener('click', switchToPage);
     function switchToPage() {
+      displayCards(page, title, cards);
       pages.forEach(page => {
         page.classList.add('make-invisible');
       });
