@@ -7,5 +7,5 @@ export default function displayCards(page, title, cards) {
     cardSet = cards.filter(card => card.bookmarked);
   }
 
-  createPage(page, title, cardSet);
+  createPage(page, title, cardSet, cards);
 }

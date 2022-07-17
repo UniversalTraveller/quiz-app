@@ -1,6 +1,6 @@
 import displayCards from '../../molecules/question-card/displayCards.js';
 import createTitleBar from '../../organisms/title-bar/createTitleBar.js';
-export default function createPage(page, title, cards) {
+export default function createPage(page, title, cards, allCards) {
   const pages = document.getElementsByClassName(page);
   const pageContent = pages[0];
   pageContent.innerHTML = '';
@@ -34,8 +34,8 @@ export default function createPage(page, title, cards) {
         bookmarkButton.classList.add('question-card__bookmark-button--active');
         card['bookmarked'] = true;
       }
-      displayCards('page--bookmarks', 'Bookmarks', cards);
-      displayCards('page--home', 'Quiz-App', cards);
+      displayCards('page--bookmarks', 'Bookmarks', allCards);
+      displayCards('page--home', 'Quiz-App', allCards);
     });
 
     const bookmarkIcon = document.createElement('span');
