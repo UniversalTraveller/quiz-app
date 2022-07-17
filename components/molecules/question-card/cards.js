@@ -7,7 +7,7 @@ export default function getCards() {
     .then(javascriptObject => displayTheCards(javascriptObject.results))
     .catch(error => console.error(error.message));
 
-  function displayTheCards(arrayToDisplay) {
+  /*   function displayTheCards(arrayToDisplay) {
     console.log(arrayToDisplay);
     const cards = [];
 
@@ -19,6 +19,21 @@ export default function getCards() {
         tags: card.category,
       });
     });
+    displayCards('page--home', 'Quiz-App', cards);
+    displayCards('page--bookmarks', 'Bookmarks', cards);
+  } */
+
+  function displayTheCards(arrayToDisplay) {
+    //console.log(arrayToDisplay);
+    const cards = arrayToDisplay.map((card, index) => {
+      return {
+        id: index + 1,
+        question: card.question,
+        answer: card.correct_answer,
+        tags: card.category,
+      };
+    });
+    console.log('Cards: ' + cards);
     displayCards('page--home', 'Quiz-App', cards);
     displayCards('page--bookmarks', 'Bookmarks', cards);
   }
